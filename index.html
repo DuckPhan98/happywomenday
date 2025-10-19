@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>For My Love - Happy Women's Day</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script> -->
+    <script src="js/feather.min.js"></script>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:wght@300;400;600&display=swap');
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+
+        .dancing-font {
+            font-family: 'Dancing Script', cursive;
+        }
+
+        .heart-beat {
+            animation: heartbeat 1.5s infinite;
+        }
+
+        @keyframes heartbeat {
+            0% {
+                transform: scale(1);
+            }
+
+            25% {
+                transform: scale(1.1);
+            }
+
+            50% {
+                transform: scale(1);
+            }
+
+            75% {
+                transform: scale(1.1);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .polaroid {
+            background: white;
+            padding: 1rem 1rem 3rem 1rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transform: rotate(-2deg);
+            transition: all 0.3s ease;
+        }
+
+        .polaroid:hover {
+            transform: rotate(0deg) scale(1.05);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .polaroid:nth-child(even) {
+            transform: rotate(2deg);
+        }
+
+        .polaroid:nth-child(even):hover {
+            transform: rotate(0deg) scale(1.05);
+        }
+
+        .fade-in {
+            opacity: 0;
+            transition: opacity 1s ease;
+        }
+
+        .visible {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body class="bg-pink-50">
+    <!-- Floating Hearts Background -->
+    <div class="fixed inset-0 overflow-hidden pointer-events-none z-0">
+        <div id="hearts-container" class="absolute inset-0"></div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="relative z-10">
+        <!-- Hero Section -->
+        <section
+            class="min-h-screen flex flex-col items-center justify-center px-4 py-20 text-center bg-gradient-to-b from-pink-100 to-pink-200 relative overflow-hidden">
+            <div class="absolute top-0 left-0 w-full h-full opacity-20">
+                <div
+                    class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxwYXR0ZXJuIGlkPSJwYXR0ZXJuIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgcGF0dGVyblRyYW5zZm9ybT0icm90YXRlKDQ1KSI+PHJlY3Qgd2lkdGg9IjIwIiBoZWlnaHQ9IjIwIiBmaWxsPSJub25lIiBzdHJva2U9InJnYmEoMjM5LDY4LDEyOCwwLjEpIiBzdHJva2Utd2lkdGg9IjEiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjcGF0dGVybikiLz48L3N2Zz4=')]">
+                </div>
+            </div>
+
+            <div class="relative z-10 max-w-4xl mx-auto">
+                <div class="heart-beat mb-8">
+                    <i data-feather="heart" class="w-16 h-16 text-pink-500 mx-auto"></i>
+                </div>
+                <h1 class="dancing-font text-5xl md:text-7xl font-bold text-pink-700 mb-6 animate-fade-in">Happy Women's
+                    Day</h1>
+                <p class="text-xl md:text-2xl text-pink-600 mb-8 dancing-font">20.10.2025</p>
+                <p class="text-lg md:text-xl text-pink-800 mb-10 max-w-2xl mx-auto">Gửi đến em người iu xinh đẹp cụa
+                    tuiii... 😉</p>
+                <div class="animate-bounce mt-10">
+                    <i data-feather="chevron-down" class="w-10 h-10 text-pink-500 mx-auto"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- Message Section -->
+        <section class="py-20 px-4 bg-white relative">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="dancing-font text-4xl md:text-5xl text-center text-pink-600 mb-12">My Dearest Love</h2>
+
+                <div
+                    class="bg-pink-50 rounded-xl p-8 md:p-12 shadow-lg mb-16 transform transition-all duration-500 hover:shadow-xl">
+                    <p class="text-lg md:text-xl text-pink-800 leading-relaxed mb-6">
+                        Hôm nay là ngày Phụ Nữ Việt Nam 20/10, aDuck chúc em người iu ngày hôm ni có thật nhiều niềm vui
+                        và may mắn.
+                    </p>
+                    <p class="text-lg md:text-xl text-pink-800 leading-relaxed mb-6">
+                        Chúc em người iu luôn tươi cười, vui vẻ, mạnh khỏe dài dài ... Í là luôn xinh đẹp í, hẹ hẹ hẹ ☺️
+                    </p>
+                    <p class="text-lg md:text-xl text-pink-800 leading-relaxed dancing-font text-center text-2xl mt-8">
+                        Happy Women's Day, my love!
+                    </p>
+                </div>
+
+                <div class="flex justify-center mt-10">
+                    <i data-feather="heart" class="w-12 h-12 text-pink-500 mx-auto"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="py-20 px-4 bg-pink-100">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="dancing-font text-4xl md:text-5xl text-center text-pink-600 mb-16">Our Beautiful Moments</h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Photo 1 - Replace with your image -->
+                    <div class="polaroid fade-in">
+                        <img src="img/img1.jpeg" alt="Special Moment" class="w-full h-64 object-cover mb-4">
+
+                    </div>
+
+                    <!-- Photo 2 - Replace with your image -->
+                    <div class="polaroid fade-in">
+                        <img src="img/img2.jpeg" alt="Special Moment" class="w-full h-64 object-cover mb-4">
+
+                    </div>
+
+                    <!-- Photo 3 - Replace with your image -->
+                    <div class="polaroid fade-in">
+                        <img src="img/img3.jpeg" alt="Special Moment" class="w-full h-64 object-cover mb-4">
+
+                    </div>
+
+                    <!-- Photo 4 - Replace with your image -->
+                    <div class="polaroid fade-in">
+                        <img src="img/img4.jpeg" alt="Special Moment" class="w-full h-64 object-cover mb-4">
+                    </div>
+                    <!-- Photo 5 - Replace with your image -->
+                    <div class="polaroid fade-in">
+                        <img src="img/img5.jpeg" alt="Special Moment" class="w-full h-64 object-cover mb-4">
+
+                    </div>
+
+                    <!-- Photo 6 - Replace with your image -->
+                    <div class="polaroid fade-in">
+                        <img src="img/img6.jpeg" alt="Special Moment" class="w-full h-64 object-cover mb-4">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Section -->
+        <section
+            class="min-h-[50vh] flex items-center justify-center px-4 py-20 text-center bg-gradient-to-b from-white to-pink-100 relative overflow-hidden">
+            <div class="max-w-4xl mx-auto relative z-10">
+                <div class="heart-beat mb-10">
+                    <i data-feather="heart" class="w-20 h-20 text-pink-500 mx-auto"></i>
+                </div>
+                <h2 class="dancing-font text-4xl md:text-6xl font-bold text-pink-700 mb-8">Forever Yours</h2>
+                <p class="text-xl md:text-2xl text-pink-600 mb-8 dancing-font">With all my love</p>
+                <p class="text-lg md:text-xl text-pink-800 max-w-2xl mx-auto">Ghệ mình mình êu. Ghệ mình mình thương. Hẹ
+                    hẹ hẹ 🥰</p>
+            </div>
+
+            <div class="absolute bottom-10 left-0 right-0 text-center">
+                <p class="text-pink-500 text-sm">Từ tình iu của anh gửi đến em iuu ❤️</p>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Initialize Feather Icons
+        feather.replace();
+
+        // Create floating hearts
+        function createHearts() {
+            const container = document.getElementById('hearts-container');
+            const heartCount = 30;
+
+            for (let i = 0; i < heartCount; i++) {
+                const heart = document.createElement('div');
+                heart.innerHTML = feather.icons.heart.toSvg();
+                heart.className = 'absolute text-pink-300 opacity-70';
+
+                // Random size between 0.5rem and 2rem
+                const size = 0.5 + Math.random() * 1.5;
+                heart.style.width = `${size}rem`;
+                heart.style.height = `${size}rem`;
+
+                // Random position
+                heart.style.left = `${Math.random() * 100}%`;
+                heart.style.top = `${Math.random() * 100}%`;
+
+                // Random animation
+                const duration = 20 + Math.random() * 30;
+                const delay = Math.random() * 10;
+                heart.style.animation = `float ${duration}s linear ${delay}s infinite`;
+
+                container.appendChild(heart);
+            }
+        }
+
+        // Add floating animation to CSS
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes float {
+                0% {
+                    transform: translateY(0) rotate(0deg);
+                    opacity: 0.7;
+                }
+                50% {
+                    opacity: 0.9;
+                }
+                100% {
+                    transform: translateY(-100vh) rotate(360deg);
+                    opacity: 0;
+                }
+            }
+        `;
+        document.head.appendChild(style);
+        // Heartbeat animation for final section
+        gsap.to(".heart-beat", {
+            scale: 1.2,
+            repeat: -1,
+            yoyo: true,
+            ease: "sine.inOut",
+            duration: 1.5
+        });
+
+        // Fade-in animation for polaroids
+        gsap.utils.toArray('.fade-in').forEach(elem => {
+            gsap.fromTo(elem, {
+                autoAlpha: 0,
+                y: 50
+            }, {
+                autoAlpha: 1,
+                y: 0,
+                duration: 1,
+                scrollTrigger: {
+                    trigger: elem,
+                    start: "top 80%",
+                    toggleActions: "play none none none"
+                }
+            });
+        });
+
+        // Smooth scrolling
+        const lenis = new Lenis();
+
+        function raf(time) {
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+        }
+
+        requestAnimationFrame(raf);
+    </script>
+</body>
+
+</html>
